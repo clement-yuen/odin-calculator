@@ -1,0 +1,143 @@
+
+.webpage {
+    
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(216, 211, 204);
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: 500px;
+    grid-template-rows: 700px;
+    
+    
+}
+
+.calculator {
+    display: grid;
+    border-style: solid;
+    border-color: rgb(78, 78, 78);
+    grid-template-rows: 240px;
+    border-radius: 25px;
+    background-color:rgb(233, 221, 197);
+    font-family: "Lucinda Console", monospace;
+    
+   
+}
+
+.display {
+    display: grid;
+    border-style: solid;
+    padding: 20px;
+    margin: 8% 8% 0% 8%;
+    height: 50%;
+    border-radius: 15px;
+    border-color: rgb(78, 78, 78);
+    background-color:rgb(199, 198, 198);
+    
+}
+
+.monitorTop {
+    display:grid;
+   
+    font-size:x-large;
+    align-items: center;
+    justify-content: end;
+    padding: 10px;
+}
+
+.monitorBot {
+    display:grid;
+  
+    font-size:xx-large;
+    align-items: center;
+    justify-content: end;
+    padding: 10px;
+    font-weight: bolder;
+}
+
+.keypad {
+    display: grid;
+}
+
+
+.calcBody {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0% 8% 8% 8%;
+    row-gap: 8px;
+    column-gap: 8px;
+    
+
+}
+.operators {
+    display: grid;
+
+   
+    grid-template-columns: repeat(5, auto);
+    row-gap: 8px;
+    column-gap: 8px;
+    grid-template-rows: auto;
+    height: auto;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    
+}
+
+
+
+
+.operators div {
+    display: grid;
+    border-style:solid;
+    border-color: rgb(78, 78, 78);
+    justify-content: center;
+    align-items: center;
+    font-weight:bold;
+    font-size: x-large;
+    border-radius: 8px;
+    background-color: white;
+    max-height: 69.5px;
+   
+}
+
+
+.number {
+    display: grid;
+    border-style:solid;
+    border-color: rgb(78, 78, 78);
+    justify-content: center;
+    align-items: center;
+    font-weight:bold;
+    font-size:larger;
+    border-radius: 8px;
+    background-color: white;
+}
+
+.equal {
+    display: grid;
+    border-style:solid;
+    border-color: rgb(78, 78, 78);
+    background-color: white;
+    border-radius: 8px;
+    
+    justify-content: center;
+    align-items: center;
+    font-size:x-large;
+    font-weight: bold;
+    
+}
+.clear {
+    display: grid;
+    border-style:solid;
+    border-color: rgb(78, 78, 78);
+    background-color: white;
+    border-radius: 8px;
+    
+    justify-content: center;
+    align-items: center;
+    font-size:x-large;
+    font-weight: bold;
+    color:maroon;
+}
+
