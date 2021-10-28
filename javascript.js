@@ -96,12 +96,14 @@ function displayOperators() {
             haveDot = false;
             const output = document.querySelector('.monitorTop');
             calculator.prevNum = output.textContent;
+            
+
             if (output.textContent !== "") {
                 let x = Number(output.textContent).toLocaleString();
-                if (!isNaN(x)) {
+                if (!isNaN(Number(calculator.prevNum))) {
                     output.textContent = Number(output.textContent).toLocaleString();
                 }
-              
+                
             }
             output.textContent += ` ${operator.textContent} `;
             calculator.operatorSym = output.textContent.slice(-2).replace(/\s/g, '');
