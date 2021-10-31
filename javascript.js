@@ -176,13 +176,11 @@ function clearEntry(calculatorStatus) {
         
     }
     else if (calculatorStatus === "inputPrevNumState") {
-            if (calculator.result !== "") {
-                return;
-            }
-            else if (calculator.prevNum.slice(-1) === '.') {
+           
+                calculator.prevNum.slice(-1) === '.' 
                 haveDot = false;
                 
-            }
+            
             
             calculator.prevNum = calculator.prevNum.slice(0, -1);
             monitorTop.textContent = monitorTop.textContent.slice(0, -1);
